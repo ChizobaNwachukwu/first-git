@@ -1,0 +1,205 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.parent{
+    width: 1300px;
+    height: 1900px;
+}
+#picture{
+    width: 600px;
+    height: 600px;
+    margin-left: 50px;
+}
+header{
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 230px;
+}
+.list{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    position: absolute;
+    top: 30px;
+    margin-left: 550px;
+   
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 550;
+
+}
+a:hover{
+text-decoration-line: underline;
+text-decoration-color: blue;
+text-decoration-thickness: 5px;
+
+
+}
+.ronald{
+    position: absolute;
+    top: 20px;
+    margin-left:180px ;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+
+}
+#span{
+    background-color: blue;
+    color: whitesmoke;
+    padding: 15px;
+    width:40px;
+    border-radius: 50%;
+   
+   
+}
+#seco{
+    position:relative;
+    right: 14px;
+}
+.para{
+    color: blue;
+    position: relative;  
+    bottom: 1720px;
+    margin-inline: auto;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 700;
+    font-style: normal;
+}
+.text{
+    text-align: center;
+    position: relative;
+}
+.myn{
+    position: relative;
+    margin-inline: auto;
+    bottom: 1700px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    font-size: 50px;
+}
+.web{
+    color: blue;
+    bottom: 310px;
+    position: absolute;
+    left: 580px;
+    font-size: 30px;
+    font-weight: 600;
+    animation:home 5s ease infinite ;
+    transform: translate(100%);
+}
+#center{
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    bottom: 230px;
+    left: 614px;
+    transform: rotate(45deg);
+}
+
+#icon-box{
+    position: absolute;
+    bottom: 10px;
+    height: 100%;
+    width: 100%;
+    transform: rotate(-45deg);
+}
+@keyframes home {
+    0%{
+        ::after{
+            content:'D'
+        }
+        color: black;
+        
+    }
+    10%{
+        color: blue;
+        right: 10px;
+        transform: translate(-20%);
+        ::after{
+            content:'De'
+        }
+    }
+    50%{
+        color: blue;
+        right: 10px;
+        transform: translate(-20%);
+        ::after{
+            content:'Desig'
+        }
+    }
+    10%{
+        color: blue;
+        right: 10px;
+        transform: translate(-20%);
+        ::after{
+            content:'Designer'
+        }
+    }
+}
+.about{
+    font-size: 60px;
+    font-weight: 800;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-left: 40px;
+}
+.girl{
+    font-weight: 300;
+    line-height: 25px;
+    margin-left: 40px;
+}
+.black{
+    font-weight: 700;
+    display: inline-flex;
+    margin-left: 40px;
+}
+
+/* #center{
+    display: grid;
+    place-items: center;
+} */
+button{
+    color: white;
+    background-color: blue;
+    margin-top: 50px;
+    margin-left: 40px;
+    padding: 15px;
+    border-radius: 30px;
+    font-weight: 600;
+    border-color: none;
+}
+button:hover{
+    color: black;
+}
+#arrow{
+    /* position: absolute; */
+   left: 25px;
+    bottom: 15px;
+    height: 20px;
+    font-size: 30px;
+    animation: arrow 2s ease-in infinite;
+}
+@keyframes arrow {
+
+    from {
+        margin-top: 0;
+    }
+
+    to {
+        margin-top: 80%;
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+.parent{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+}
+  }
